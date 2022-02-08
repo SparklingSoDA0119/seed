@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4b6b6880-1930-4d36-b8bb-13c62827c759}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Seed_Exception.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Mutex.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Object.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_String.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Assert.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_StringUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_StringTokenizer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_ThreadManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Thread.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Condition.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Time.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_TimeFormatter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_SystemUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Looper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Endian.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Seed_Exception.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Lock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Mutex.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Object.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_String.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Type.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Assert.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_StringUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_StringTokenizer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_ThreadManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Thread.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Timer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Condition.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Time.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_TimeFormatter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_SystemUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Looper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Singleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Endian.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
