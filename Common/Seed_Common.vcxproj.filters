@@ -110,5 +110,8 @@
     <ClInclude Include="Seed_Endian.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="Seed_Queue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

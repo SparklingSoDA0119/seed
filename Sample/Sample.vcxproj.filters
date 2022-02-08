@@ -2,5 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="SampleMain.cpp" />
+    <ClCompile Include="SampleApp.cpp" />
+    <ClCompile Include="SampleQueue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SampleApp.h" />
+    <ClInclude Include="SampleQueue.h" />
   </ItemGroup>
 </Project>
