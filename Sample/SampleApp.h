@@ -2,7 +2,6 @@
 #define _SAMPLE_APP_H_
 
 #include <Common/Seed_Queue.h>
-#include <Sample/SampleQueue.h>
 #include <deque>
 
 namespace Seed {
@@ -15,7 +14,7 @@ namespace Seed {
 
 	private :
 		bool _isRun;
-		cSampleQueue _queue;
+		
 
 	public :
 		int32 initailization();

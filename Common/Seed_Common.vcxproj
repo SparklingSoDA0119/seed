@@ -43,7 +43,6 @@
     <ClInclude Include="Seed_Looper.h" />
     <ClInclude Include="Seed_Mutex.h" />
     <ClInclude Include="Seed_Object.h" />
-    <ClInclude Include="Seed_Queue.h" />
     <ClInclude Include="Seed_Singleton.h" />
     <ClInclude Include="Seed_String.h" />
     <ClInclude Include="Seed_StringTokenizer.h" />

@@ -3,10 +3,8 @@
   <ItemGroup>
     <ClCompile Include="SampleMain.cpp" />
     <ClCompile Include="SampleApp.cpp" />
-    <ClCompile Include="SampleQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SampleApp.h" />
-    <ClInclude Include="SampleQueue.h" />
   </ItemGroup>
 </Project>
