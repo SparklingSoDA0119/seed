@@ -1,7 +1,12 @@
-#include <Common/Seed_String.h>
+
+#define NOMINMAX
+//#define RAPIDJSON_HAS_STDSTRING	1
+
 #include <Sample/SampleApp.h>
+#include <Sample/SampleJson.h>
 #include <iostream>
 #include <csignal>
+
 
 using namespace Seed;
 
@@ -31,11 +36,9 @@ int32 main(int32 argc, char* argv[])
 
 	signalHanderRegist();
 
-	cSampleApp sample;
-	sample.initailization();
+	SampleJson jsonSample;
+	ERR_TYPE_E eRet = jsonSample.createJsonDocument();
 
-	sample.join();
-	sample.quit();
 	
 	return 0;
 }

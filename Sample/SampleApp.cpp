@@ -30,8 +30,7 @@ int32 cSampleApp::initailization()
 void cSampleApp::looperFunc()
 {
     if (_isRun) {
-        //printf("<%s:%s(%d)> ** Running. currentTick : %llu\n", __FILE__, __FUNCTION__, __LINE__, TickUtil::currentTick());
-        
+        printf("<%s:%s(%d)> ** Running. currentTick : %llu\n", __FILE__, __FUNCTION__, __LINE__, TickUtil::currentTick());
     }
 
     cThread::sleep(30);

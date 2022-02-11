@@ -22,6 +22,7 @@
     <ClCompile Include="Seed_Assert.cpp" />
     <ClCompile Include="Seed_Condition.cpp" />
     <ClCompile Include="Seed_Exception.cpp" />
+    <ClCompile Include="Seed_JsonObject.cpp" />
     <ClCompile Include="Seed_Looper.cpp" />
     <ClCompile Include="Seed_Mutex.cpp" />
     <ClCompile Include="Seed_Object.cpp" />
@@ -39,6 +40,7 @@
     <ClInclude Include="Seed_Assert.h" />
     <ClInclude Include="Seed_Condition.h" />
     <ClInclude Include="Seed_Exception.h" />
+    <ClInclude Include="Seed_JsonObject.h" />
     <ClInclude Include="Seed_Lock.h" />
     <ClInclude Include="Seed_Looper.h" />
     <ClInclude Include="Seed_Mutex.h" />
@@ -157,7 +159,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Opensource\rapidjson\rapidjson-1.1.0\rapidjson-1.1.0\include;$(ProjectDir)..\</AdditionalIncludeDirectories>
+      <AdditionalOptions>/D RAPIDJSON_HAS_STDSTRING %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

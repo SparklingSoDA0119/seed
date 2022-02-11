@@ -51,6 +51,9 @@
     <ClCompile Include="Seed_Endian.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="Seed_JsonObject.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Seed_Exception.h">
@@ -108,6 +111,9 @@
       <Filter>Common</Filter>
     </ClInclude>
     <ClInclude Include="Seed_Endian.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_JsonObject.h">
       <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>

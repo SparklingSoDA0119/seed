@@ -163,6 +163,19 @@ namespace Seed {
 		DOC_TYPE_BINARY,
 		DOC_TYPE_MAX,
 	} DOC_TYPE_E;
+
+    enum class ERR_TYPE_E {
+        SUCCESS = 0,
+        FAILURE,
+
+        FILENAME_IS_EMPTY,
+        CAN_NOT_OPEN_FILE,
+
+        JSON_PARSE_ERROR,
+        JSON_VALUE_TYPE_MISS_MATCH,
+        JSON_CAN_NOT_FIND_MEMBER,
+        JSON_CAN_NOT_ADD_MEMBER,
+    };
 }
 
 #endif
