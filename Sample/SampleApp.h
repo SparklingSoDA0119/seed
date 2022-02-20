@@ -3,6 +3,7 @@
 
 #include <Common/Seed_Queue.h>
 #include <deque>
+#include <System/Seed_System.h>
 
 namespace Seed {
 
@@ -14,7 +15,7 @@ namespace Seed {
 
 	private :
 		bool _isRun;
-		
+		std::unique_ptr<cSystem> _pSystem;
 
 	public :
 		int32 initailization();

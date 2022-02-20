@@ -163,6 +163,10 @@ namespace Seed {
 		DOC_TYPE_BINARY,
 		DOC_TYPE_MAX,
 	} DOC_TYPE_E;
+
+    enum class ERR_TYPE_E {
+        SUCCESS = 0,
+    };
 }
 
 #endif
