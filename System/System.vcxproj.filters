@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="System">
+      <UniqueIdentifier>{63e18d2e-7d92-49bc-93a4-5703f6800266}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Seed_System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Windows10.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Cpu.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_CpuAmdX64.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Ubuntu2004.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Disk.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_NetworkDevice.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Seed_Gpu.h">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Seed_Windows10.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_CpuAmdX64.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Ubuntu2004.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Disk.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_NetworkDevice.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Seed_Gpu.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
