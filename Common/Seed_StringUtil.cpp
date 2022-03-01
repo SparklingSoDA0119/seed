@@ -1,4 +1,5 @@
 #include <Common/Seed_StringUtil.h>
+#include <Common/Seed_Assert.h>
 
 #include <sstream>
 
@@ -109,7 +110,7 @@ namespace Seed {
         }
 
         uint32 replaceIllegalUtf8Internal(const char* src, const char rep, \
-            bool isMBCS, char* cString, cString* cString)
+            bool isMBCS, char* cCharString, cString* cStringStr)
         {
             if (!src || '\0' == src[0]) {
                 return 0;
@@ -119,7 +120,7 @@ namespace Seed {
                 return 0;
             }
 
-            if (!cString && !cString) {
+            if (!cCharString && !cStringStr) {
                 return 0;
             }
 
@@ -145,7 +146,7 @@ namespace Seed {
                         tmp[2] = '\0';
                     }
                     else {
-                        VIXASSERT(false, L"invalid charcode!");
+                        SEED_ASSERT(false, L"invalid charcode!");
                     }
 
                     // detecting illegal UTF-8 character.
@@ -153,22 +154,22 @@ namespace Seed {
                     cString utf8Char(tmp);
 
                     if (utf8Char.length() > 0 && (2 == len || isVisibleChar(tmp[0]))) {
-                        if (cString) {
+                        if (cCharString) {
                             // convetible to UTF-8 character.
-                            ::strcat(cString, tmp);
+                            ::strcat(cCharString, tmp);
                         }
                         else {
-                            cString->append(utf8Char);
+                            cStringStr->append(utf8Char);
                         }
                         bytes += len;
                     }
                     else {
                         // un-convetible to UTF-8 character.
-                        if (cString) {
-                            ::strcat(cString, repStr);
+                        if (cCharString) {
+                            ::strcat(cCharString, repStr);
                         }
                         else {
-                            cString->appendf(L"%s", repStr);
+                            cStringStr->appendf(L"%s", repStr);
                         }
                         bytes++;
                         if (2 == len) {
@@ -176,22 +177,22 @@ namespace Seed {
                             tmp[1] = '\0';
                             cString utf8Char2(tmp);
                             if (utf8Char2.length() > 0 && isVisibleChar(tmp[0])) {
-                                if (cString) {
+                                if (cCharString) {
                                     // convetible to UTF-8 character.
-                                    ::strcat(cString, tmp);
+                                    ::strcat(cCharString, tmp);
                                 }
                                 else {
-                                    cString->append(utf8Char2);
+                                    cStringStr->append(utf8Char2);
                                 }
                                 bytes++;
                             }
                             else {
                                 // un-convetible to UTF-8 character.
-                                if (cString) {
-                                    ::strcat(cString, repStr);
+                                if (cCharString) {
+                                    ::strcat(cCharString, repStr);
                                 }
                                 else {
-                                    cString->appendf(L"%s", repStr);
+                                    cStringStr->appendf(L"%s", repStr);
                                 }
                                 bytes++;
                             }
@@ -261,7 +262,7 @@ namespace Seed {
 
     }   // end of cStringUtil
 
-}   // end of Vix
+}   // end of Seed
 
 
 // <EOF>

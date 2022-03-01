@@ -26,8 +26,8 @@ namespace Seed {
         typedef __time32_t          time_t32;
         typedef __time64_t          time_t64;
     #else
-        typedef signed long long    int64;
-        typedef unsigned long long  uint64;
+        //typedef signed long long    int64;
+        //typedef unsigned long long  uint64;
         typedef unsigned short      wchar;
         typedef int                 BOOL;
         typedef int                 SOCKET;
