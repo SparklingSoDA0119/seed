@@ -23,6 +23,7 @@ namespace Seed {
     void setSeedAssertFunc(SeedAssertFunc func);
 
     extern const SeedAssertFunc& seed_assert_func;
+    
 #define SEED_ASSERT(exp, msg)   \
     (void)((exp) || (Seed::seed_assert_func(cString(#exp), msg, cString(__FUNCTION__), cString(__FILE__), __LINE__), 0))
 #else

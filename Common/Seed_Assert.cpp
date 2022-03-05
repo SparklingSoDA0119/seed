@@ -27,7 +27,7 @@ namespace Seed {
         SeedAssertFunc _assertFunc = &_defaultAssertFunc;
     }
 
-    const SeedAssertFunc& seedAssertFunc = _assertFunc;
+    const SeedAssertFunc& seed_assert_func = _assertFunc;
 
     void setSeedAssertFunc(SeedAssertFunc func)
     {
