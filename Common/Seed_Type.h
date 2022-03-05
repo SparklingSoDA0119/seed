@@ -166,6 +166,23 @@ namespace Seed {
 
     enum class ERR_TYPE_E {
         SUCCESS = 0,
+        FAILURE,
+        UNKNOWN,
+
+        /* File */
+        FILE_NAME_EMPTY = 100,
+        CAN_NOT_FILE_OPEN,
+        CAN_NOT_FIND_FILE,
+
+        /* JSON */
+        HAS_PARSE_ERR = 200,
+        JSON_MODE_MISS_MATCH,
+        STRING_IS_EMPTY,
+        JSON_VALUE_TYPE_MISS_MATCH,
+        CAN_NOT_FIND_MEMBER,
+
+        /* POINTER */
+        NULL_PTR = 900000,
     };
 }
 
