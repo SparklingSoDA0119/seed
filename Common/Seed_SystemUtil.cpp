@@ -18,4 +18,16 @@ namespace Seed {
 			return (t1 <= t2) ? t2 - t1 : (std::numeric_limits<uint64>::max() - t1) + t2 + 1;
 		}
 	}
+
+	namespace FileUtil {
+		ERR_TYPE_E isExistFile(const cString& fileName)
+		{
+			if (access(fileName.to_string().c_str(), F_OK) == 0) {
+				return ERR_TYPE_E::SUCCESS;
+			}
+			else {
+				return ERR_TYPE_E::CAN_NOT_FIND_FILE;
+			}
+		}
+	}
 }
